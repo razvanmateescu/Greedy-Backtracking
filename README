@@ -1,0 +1,48 @@
+
+
+
+Pentru problema 1 am citit elementele din fisier si am pus jocurile si benzile desenate
+intr un vector de perechi pt a le sorta
+am sortat descrescator dupa suma elementele folosind o functie de sortare 
+ce primeste ca parametrii 2 perechi si face suma fiecareia.
+Apoi parcurg vectorul si pentru sumele egale retin dimensiunea fiecarei 
+inlantuiri de sume egale si o sortez descrescator cu alta functie dupa numarul de jocuri
+folosind functia sort predefinita a limbajului
+Apoi parcurg elementele pentru a face suma din nou
+Folosesc o variabila pentru paritate pentru a stii
+daca este john sau sam la rand pentru concurs
+Daca gasesc o secventa de sume consecutive pentru sam concursurile fiind 
+sortate dupa jocuri descrescator parcurg pana la ultimul element secventa
+si adaug valoarea benzilor la sam apoi parcurg inspre inceputul secventei
+pentru john parcurg normal inainte.
+In timpul asta marchez concursurile luate
+Daca vreunul din ei ajunge pe un concurs luat ies din loop
+setand i ul cu care parcurg concursurile la un element dupa ultimul
+element din secventa.In timp ce parcurg concururile adaug la o variabila
+sumele benzilor si la alta sumele jocurilor
+Cand nu sunt secvente de sume egale
+testez paritatea lui k sa stiu cine e la rand
+si pun la suma si incrementez contorul pt concursuri
+la final scriu in fisierul de output
+
+Pentru problema 2 am aplicat algoritmul de backtracking
+Am facut o functie de afisare unde incrementez un indice initializat
+de mine si cand este egal cu indicele dat afisez raspunsul
+si marchez faptul ca am solutie la indicele respectiv daca indicele
+Apoi in functia in care fac backtrackingul primesc ca argument
+al functiei suma data -nr de indici +1 pentru a porni descarescator
+cu calculul sumelor de la cele mai mari valori ale nr
+cand indicele depaseste indicele cerut ma intorc deoarece nu mai gasesc solutie
+pe ramura aceea.Cand indicele si suma sunt egale cu cele cautate afisez solutia
+Apoi pornesc cu un loop de la parametru functiei descrescator
+si cat timp nu depasesc indicele si suma adaug suma si retin nr de elemetne
+si valoarea care se pune in suma si apelez functia de  backtracking recursiv
+alegand ca parametru minimul dintre valoarea curenta si scaderea dintre suma data
+si cat am in suma in acel moment si cati indici am folosit pentru ca astfel
+sa reduc din numarul de ramuri care ar depasi suma si nu ar putea duce la solutie
+
+
+
+
+ 
+
